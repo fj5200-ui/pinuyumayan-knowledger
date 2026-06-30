@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "formosanbank-puyuma-tts"
+version = "0.1.0"
+description = "Puyuma corpus extraction, translation, and TTS training pipeline built from FormosanBank"
+readme = "README.md"
+requires-python = ">=3.12"
+authors = [{ name = "fj5200-ui" }]
+dependencies = []
+
+[project.optional-dependencies]
+translate = [
+  "datasets>=3.0.0",
+  "evaluate>=0.4.2",
+  "numpy>=1.26.4",
+  "sacrebleu>=2.4.3",
+  "torch>=2.3.0",
+  "transformers>=4.44.0",
+]
+tts = [
+  "TTS>=0.22.0",
+]
+dev = [
+  "pytest>=8.3.0",
+]
+
+[project.scripts]
+formosanbank-puyuma = "formosanbank_puyuma.cli:main"
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+
+[tool.setuptools.packages.find]
+where = ["src"]

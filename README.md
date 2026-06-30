@@ -78,7 +78,7 @@ python -m formosanbank_puyuma.train_tts \
 python -m pip install .[translate,tts]
 ```
 
-`tts` extra 會安裝 Coqui TTS 的維護版 `coqui-tts`，較適合 Windows / Python 3.12。
+`tts` extra 會安裝 Coqui TTS 的維護版 `coqui-tts` 與 `torchaudio`，較適合 Windows / Python 3.12。
 
 ## Repo 結構
 

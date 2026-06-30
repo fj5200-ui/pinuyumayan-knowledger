@@ -18,11 +18,12 @@ translate = [
   "numpy>=1.26.4",
   "sacrebleu>=2.4.3",
   "torch>=2.3.0",
-  "transformers>=4.44.0",
+  "transformers>=4.57,<5.0",
 ]
 tts = [
   "coqui-tts>=0.27.4",
   "torchaudio>=2.3.0",
+  "torchcodec>=0.8.0",
 ]
 dev = [
   "pytest>=8.3.0",
